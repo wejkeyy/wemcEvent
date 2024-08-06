@@ -1,6 +1,6 @@
-# wemcEvent Plugins
+# WemcEvent Plugins
 
-**Version:** 0.6.1 [(Download)](https://)
+**Version:** 0.6.1 [ (Download) ](https://github.com/wejkeyy/wemcEvent/blob/main/plugin_versions/Event_0.6.1.jar)
 
 ## Description
 
