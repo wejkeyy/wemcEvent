@@ -1,47 +1,46 @@
-# wemcEvent
+# wemcEvent Plugins
 
-`wemcEvent` is a Minecraft plugin designed for Spigot and Paper servers. It allows server administrators to broadcast customizable event messages to the entire server.
+**Version:** 0.6.1 [(Download)](https://)
+
+## Description
+
+`wemcEvent` is a simple Minecraft plugin for Spigot/Paper that allows server administrators to broadcast event messages to all players. Administrators can send other things other than events but remember that command is `/event`
 
 ## Features
 
-- **Broadcast Messages**: Send messages to all players on the server using predefined templates.
-- **Customizable Templates**: Define and edit message templates in `messages.yml`.
-- **Help Command**: Provides information on available commands.
+- Broadcast messages to all players on the server.
+- Messages and prefixes are customizable via `messages.yml`.
+- Supports up to 20 lines per message template.
+- That `template1` or `template2` can be added/renamed/removed
 
 ## Commands
 
-- **/event <template1>**
-  - `template1` is editable  
-  - Requires permission: `wemcEvent.admin`
+- `/event <templateName>`
 
-- **/wemcevent help**
-  - Shows all available commands and their usage.
-  - Requires permission: `wemcEvent.admin`
+## Permissions
+
+- `wemcEvent.admin`: Required to use the `/event` command. Or: **OP**
 
 ## Configuration
 
-### messages.yml
+### `messages.yml`
 
-The `messages.yml` file allows you to define message templates. Here is an example configuration:
+Define message templates in `messages.yml`:
 
 ```yaml
-messages:
-  no-permission: "You do not have permission to use this command."
-  template-not-found: "Template not found!"
+template1:
+  prefix: "&aWemcEvent" # Prefix in the chat
+  message:
+    - "--------------------------------"
+    - "Template: 1"
+    - "&cH&eE&al&5l&1o &fW&bo&lrld"
+    - "Whole server can see this"
+    - "You can add max 20 lines"
+    - "---------------"
 
-  template1:
-    prefix: "<&aWemcEvent&r>"
-    message:
-      - "--------------------------------"
-      - "Template: 1"
-      - "&cH&eE&al&5l&1o &fW&bo&lrld"
-      - "Whole server can see this"
-      - "You can add max 20 lines"
-      - "---------------"
-
-  template2:
-    prefix: "&r<&c&lServer&r>"
-    message:
-      - "Hello?"
-      - "&cGood &aMorning!"
-      - "&k----------"
+template2:
+  prefix: "&r<&c&lServer&r>" # Prefix in the chat
+  message:
+    - "Hello?"
+    - "&cGood &aMorning!"
+    - "&k----------"
