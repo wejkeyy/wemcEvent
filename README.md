@@ -1,6 +1,8 @@
 # WemcEvent Plugins
 
-**Version:** 0.6.1 [ (Download) ](https://github.com/wejkeyy/wemcEvent/raw/main/plugin_versions/Event_0.6.1.jar)
+**Version:** 0.6.1 [ (Download) ](https://github.com/wejkeyy/wemcEvent/raw/main/plugin_versions/Event_0.6.1.jar)<br>
+Spigot: [here](https://www.spigotmc.org/resources/wemcevent.118712/)
+
 
 ## Description
 
